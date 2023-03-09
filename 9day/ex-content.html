@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+      .ex1 {
+        position: relative;
+      }
+      .ex1 > figure {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 0;
+        top: 0;
+        margin: 0;
+      }
+      .ex1 > figure > div {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+        background-color: rgb(226, 232, 238);
+        border: 1px solid rgb(224, 127, 127);
+        font-family: "material symbols outlined";
+      }
+      .ex1 > img {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        z-index: 4;
+      }
+
+      .ex1 > figure > img:nth-of-type(1) {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        z-index: 3;
+      }
+      .ex1 > figure > img:nth-of-type(2) {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        z-index: 2;
+      }
+      .ex1 > figure > img:nth-of-type(3) {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        z-index: 1;
+      }
+
+      .ex1:hover > figure > img:nth-of-type(1) {
+        left: 100%;
+      }
+      .ex1:hover > figure > img:nth-of-type(2) {
+        left: 200%;
+        
+      }
+      .ex1:hover > figure > img:nth-of-type(3) {
+        left: 300%;
+      }
+      .ex1 > figure > img {
+        transition: 1s;
+        
+      }
+    </style>
+
+    <div class="ex1">
+      <img src="../img/01.jpg" alt="" />
+      <figure>
+        <div>add</div>
+        <img src="../img/02.jpg" alt="" />
+        <img src="../img/03.jpg" alt="" />
+        <img src="../img/04.jpg" alt="" />
+      </figure>
+    </div>
+  </body>
+</html>
