@@ -1,0 +1,26 @@
+table{
+    width:1000px;
+    border-collapse: collapse;
+}
+table  td,table  th{
+    border:1px solid #f00;
+}
+
+
+
+.tb-1{margin:100px auto;}
+.tb-1 > caption{
+    font-size:2rem; text-align: left;
+    padding:30px 0;
+}
+.tb-1 thead th{
+    background-color: #f00;
+    color:#fff;
+}
+.tb-1 tbody th{
+    background-color: #ddd;
+}
+.tb-1 th, .tb-1 td{
+    text-align: center;
+    padding:15px;
+}
